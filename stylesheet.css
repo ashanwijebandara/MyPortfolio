@@ -47,3 +47,16 @@ body{
 .navbar a:hover{
     color:#0ef
 }
+
+.home{
+   position: relative;
+   width: 100%;
+   justify-content: space-between;
+   height: 100vh;
+   background: 'cover.jpg'; 
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 70px 10% 0;
+}
