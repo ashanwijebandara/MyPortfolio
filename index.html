@@ -2,35 +2,278 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AshanWijebandara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-       
-        <nav class="navbar">
-            <a href="#" >Home</a>
-            <a href="#" >About</a>
-            <a href="#" >Skill</a>
-            <a href="#" >Portfolio</a>
-            <a href="#" >Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Ashan Isuru</h1>
-            <h3>And I'm a</h3>
-            <p>I'm a web designer with extensive for over 3 years.
-                <br>expertise is to create and website design , Frontend design and many more..
-            </p>
-            <div class="home-sci">
-
+   <div class="Container">
+    <nav id="header">
+        <div class="nav-logo">
+            <!-- <p class="nav-name">Logo</p> -->
+            <i class="fa-solid fa-user-secret fa-2xl nav-name" ></i>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link ">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link ">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link ">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="mode">
+            <div class="moon-sun" id="toggle-switch">
+                <i class="fa fa-moon" id="moon"></i>
+                <i class="fa fa-sun" id="sun"></i>
             </div>
         </div>
-    </section>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    <main class="wrapper">
+        <section class="featured-box section" id="home">
+            <div class="featured-text">
+                <div class="hello">
+                    <p>Hi There!</p>
+                    <p> I'm</p>
+                    <h6>Ashan Wijebandara</h6>
+                    <p>And I am a</p>
+                </div>
+                <div class="featured-name">
+                    <span class="typedText"></span>
+                </div>
+                <div class="text-info">
+                    <p>My name is Ashan Wijebandara. I'm a computer engineering student of Faculty of Engineering, University of Ruhuna. </p>
+                    <p>I am a hardworking and dedicated individual who is interested in Networking, Machine Learning, AI, Data Science and Full Stack Development. I am looking for an internship opportunity to grow as a professional in the industry. </p>
+                </div>
+                <div class="text-btn">
+                    <!-- <button class="btn hire-btn">Hire Me</button> -->
+                    <a href="https://example.com/your-cv-url" >
+
+                    <button class="btn">Download CV <i class="uil uil-file"></i></button>
+                    </a>
+                </div>
+                <div class="social_icons">
+                    <div class="icon_circle"></div>
+                    <div class="icon"><a href="https://www.hackerrank.com/profile/wijebandara_4289"><i class="fab fa-hackerrank "></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/ashan-isuru-wijebandara/"><i class="fab fa-linkedin "></i></a></div>
+                    <div class="icon"><a href="https://github.com/ashanwijebandara"><i class="fab fa-github"></i></a></div>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="IMG_4747.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About me</h1>
+            </div>
+                <!-- <p>My name is Ashan Wijebandara. I'm a undergraduate of Faculty of Engineering, University of Ruhuna. </p> -->
+                <div class="box-container">
+                    <div class="box" >
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2022</span>
+                        <h3>Spacilization</h3>
+                        <p>Specialized in Computer Enginnering.</p>
+                    </div>
+                    <div class="box" >
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2021</span>
+                        <h3>Higher studies</h3>
+                        <p>Started study at Faculty of Engineering, University of Ruhuna.</p>
+                    </div>
+                    <div class="box" >
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2019</span>
+                        <h3>AL examination</h3>
+                        <p>Passed GCE advanced level examination with 1A and 2 B's in physical science stream.<br> District Rank - 43</p>
+                    </div>
+                    <div class="box" >
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2018</span>
+                        <h3>AL examination</h3>
+                        <p>Passed GCE advanced level examination with 1A and 2 B's in physical science stream.<br> District Rank - 281</p>
+                    </div>
+                    <div class="box" >
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2015</span>
+                        <h3>OL examination</h3>
+                        <p>Passed GCE ordinary level examination with 8A's and 1C in Bilingual stream.</p>
+                    </div>
+                    
+                    
+                    
+        
+                </div>
+            
+            <div class="row">
+                <div class="skill-container">
+                    
+                        <div class="skill-card ">
+                
+                            <h2>Hard Skills</h2>
+                            <ul>
+                                <li>Python , C , C++ , Java </li>
+                                <li>HTML , CSS, JavaScript</li>
+                                <li> MERN,Flutter </li>
+                                <li>Figma</li>
+                                <li>MS office tools</li>
+                                <li>Matlab</li>
+                            </ul>
+                
+                
+                       
+                    </div>
+                    <div class="skill-card ">
+                        
+                            <h2>Soft Skills</h2>
+                            <ul>
+                                <li>Leadership</li>
+                                <li>Team Work</li>
+                                <li>Problem Solving</li>
+                                <li>Creativity</li>
+                                <li>Time Management</li>
+                                <li>Critical Thinking</li>
+                            </ul>
+                        
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <i class="uil uil-store"></i>
+                    <h3>Web Application<br> for<br> LP Gas Station</h3>
+                    <label >Tech Stack - MERN</label>
+                    <label><a href="https://github.com/ashanwijebandara/Web-App-for-a-LP-Gas-Station"> <i class="fa-solid fa-laptop-code"></i></a></label>
+                    
+                </div>
+                <div class="project-box">
+                    <i class="fa fa-stethoscope"></i>
+                    <h3>Medic</h3>
+                    <label >Doctor Appoinment Booking Mobile App</label>
+                    <label> Using Flutter and Firebase</label>
+                    <label><a href="https://github.com/ashanwijebandara/Doctor-Appointment-Mobile-App"> <i class="fa-solid fa-laptop-code"></i></a></label>
+
+                </div>
+                <div class="project-box">
+                    <i class="fa fa-binoculars"></i>
+                    <h3>Fort Roam</h3>
+                    <label >Web Application and Mobile App for</label>
+                    <label> Galle Fort Heritage Foundation</label>
+                    <label><a href="https://github.com/imeshthana/FortRoam"> <i class="fa-solid fa-laptop-code"></i></a></label>
+
+                </div>
+                <div class="project-box">
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <h3>Water Quality<br> Prediction <br>Using ML Algorithms</h3>
+                    <label >Python libires with off-shelf algorithms</label>
+                    <label><a href="https://github.com/morawaliyadda/EE5253_2023_Code_Group15"> <i class="fa-solid fa-laptop-code"></i></a></label>
+
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-users-alt"></i>
+                    <h3>Student Management System</h3>
+                    <label > WPF , C# with MVVM Pattern </label>
+                    <label><a href="https://github.com/ashanwijebandara/StudentManagementSystem"> <i class="fa-solid fa-laptop-code"></i></a></label>
+                </div>
+                <div class="project-box">
+                    <i class="fa fa-microchip"></i>
+                    <h3>Database Management <br> for<br> Electric Appliance Shop</h3>
+                    <label >MySQL Code with ER-Diagrams</label>
+                </div>
+            </div>
+
+        </section>
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Let's Connect</h1>
+                <!-- <span>Do you have a project in your mind,contact me here</span> -->
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                        <h4> <i class="uil uil-envelope"> Email: wijebandara.ashan@gmail.com</i></h4>
+                        <h4> <i class="uil uil-phone">Phone: 0710373741</i></h4>
+                        <h4><i class="uil uil-linkedin"><a href="https://www.linkedin.com/in/ashan-isuru-wijebandara/"> Ashan Isuru Wijebandara</i></a></h4>
+                        <h4><i class="uil uil-github"><a href="https://github.com/ashanwijebandara">  Ashan Wijebandara</a></i></h4>
+                    </div>
+                </div>
+                <div class="col">
+                    
+                    <div class="form-control">
+                        <div class="form-input">
+                            <input type="text" class="input-field" placeholder="Your Name">
+                            <input type="text" class="input-field" placeholder="Your Email">
+                        </div>
+                        <div class="text-area">
+                            <input type="text" class="input-subject" placeholder="Subject">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn">Send<i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+                <div class="footer-social-icons">
+                    <div class="icon" ><a href="#"></a><i class="fab fa-hackerrank "></i></div>
+                    <div class="icon"><a href="#"></a><i class="fab fa-linkedin "></i></div>
+                    <div class="icon"><a href="#"></a><i class="fab fa-github"></i></div>
+                </div>
+            </ul>
+            
+        </div>
+       
+        
+        <div class="bottum-footer">
+            <p>Copyright &copy;<a href="#home" style="text-decoration:none;">AshanWijebandara</a> - All right reserved 2024 </p>
+        </div>
+    </footer>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+   <script src="script.js"></script>
 </body>
-   
+</html>
