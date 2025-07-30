@@ -1,9 +1,9 @@
-function myMenuFunction(){
+function myMenuFunction() {
     var menuBth = document.getElementById("myNavMenu");
 
-    if(menuBth.className === "nav-menu"){
+    if (menuBth.className === "nav-menu") {
         menuBth.className += " responsive";
-    }else{
+    } else {
         menuBth.className = "nav-menu";
     }
 }
@@ -11,60 +11,60 @@ function myMenuFunction(){
 const body = document.querySelector("body"),
     toggleSwitch = document.getElementById("toggle-switch");
 
-toggleSwitch.addEventListener("click", ()=>{
+toggleSwitch.addEventListener("click", () => {
     body.classList.toggle("dark");
 });
 
-var typingEffect = new Typed(".typedText",{
-    strings : ["Coder."," Web Developer.","Flutter Developer."],
+var typingEffect = new Typed(".typedText", {
+    strings: ["ML Developer.", " Web Developer.", "Mobile Developer."],
 
     loop: true,
-    typeSpeed:100,
-    backSpeed:200,
-    backDelay:2000,
+    typeSpeed: 100,
+    backSpeed: 200,
+    backDelay: 2000,
 
 });
 
 const sr = ScrollReveal({
-    origin:"top",
+    origin: "top",
     distance: "80px",
-    duration:2000,
-    reset:true,
+    duration: 2000,
+    reset: true,
 });
 
-sr.reveal(".featured-name",{delay:100});
-sr.reveal(".text-info",{delay:200});
-sr.reveal(".text-btn",{delay:200});
-sr.reveal(".social_icons",{delay:200});
-sr.reveal(".featured-image",{delay:320});
+sr.reveal(".featured-name", { delay: 100 });
+sr.reveal(".text-info", { delay: 200 });
+sr.reveal(".text-btn", { delay: 200 });
+sr.reveal(".social_icons", { delay: 200 });
+sr.reveal(".featured-image", { delay: 320 });
 
-sr.reveal(".project-box",{interval:200});
-sr.reveal(".box",{interval:200});
-sr.reveal(".skill-card",{interval:300});
-sr.reveal(".top-header",{});
+sr.reveal(".project-box", { interval: 200 });
+sr.reveal(".box", { interval: 200 });
+sr.reveal(".skill-card", { interval: 300 });
+sr.reveal(".top-header", {});
 
 const srLeft = ScrollReveal({
-    origin:"left",
-    distance:"80px",
-    duration:2000,
-    reset:true,
+    origin: "left",
+    distance: "80px",
+    duration: 2000,
+    reset: true,
 });
 
-srLeft.reveal(".about-info",{delay:100});
-srLeft.reveal(".contact-info",{delay:100});
+srLeft.reveal(".about-info", { delay: 100 });
+srLeft.reveal(".contact-info", { delay: 100 });
 // srRight.reveal(".hard-skill",{delay:100});
 
 
 const srRight = ScrollReveal({
-    origin:"right",
-    distance:"80px",
-    duration:2000,
-    reset:true,
+    origin: "right",
+    distance: "80px",
+    duration: 2000,
+    reset: true,
 })
 
 // srRight.reveal(".skill-card",{delay:100});
 
-srRight.reveal(".form-control",{delay:100});
+srRight.reveal(".form-control", { delay: 100 });
 // srRight.reveal(".soft-skill",{delay:100});
 // const srBottum = ScrollReveal({
 //     origin:"bottum",
@@ -74,17 +74,17 @@ srRight.reveal(".form-control",{delay:100});
 // })
 // srBottum.reveal(".skill-card",{delay:100});
 
-/*  Active link  */ 
+/*  Active link  */
 
 const sections = document.querySelectorAll(".section[id]");
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.scrollY;
 
     sections.forEach((current) => {
         const sectionHeight = current.offsetHeight,
 
-            sectionTop = current.offsetTop-80,
+            sectionTop = current.offsetTop - 80,
             sectionId = current.getAttribute("id");
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -100,10 +100,10 @@ function scrollActive(){
 
 
     })
-    
+
 }
 
-window.addEventListener("scroll",scrollActive);
+window.addEventListener("scroll", scrollActive);
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     const form = document.getElementById("contactForm");
